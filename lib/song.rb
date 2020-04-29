@@ -30,8 +30,9 @@ class Song
       if genre_count.key?(@@genres[i])
         genre_count[i]+=1
       else 
-        genre_count
+        genre_count[i] << 1
       end
+    end
   end
   
 end
