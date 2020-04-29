@@ -28,7 +28,7 @@ class Song
     genre_count = Hash.new
     for i in 0..@@genres.length-1
       if genre_count.key?(@@genres[i])
-        
+        genre_count
   end
   
 end
