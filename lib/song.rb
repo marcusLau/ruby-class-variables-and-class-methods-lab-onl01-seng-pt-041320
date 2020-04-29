@@ -8,6 +8,9 @@ class Song
   
   def initialize(name, artist, genre)
     @@count+=1
+    @name = name
+    @artist = artist
+    @genre = genre
     @@artists << artist
     @@genres << genre
   end
@@ -26,6 +29,10 @@ class Song
   
   def self.genre_count
     genre_count = Hash.new
+    
+    
+    
+    
     for i in 0..@@genres.length-1
       if genre_count.key?(@@genres[i])
         genre_count[i]+=1
