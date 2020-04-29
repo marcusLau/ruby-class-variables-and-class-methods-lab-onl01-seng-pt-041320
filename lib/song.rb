@@ -27,7 +27,8 @@ class Song
   def self.genre_count
     genre_count = Hash.new
     for i in 0..@@genres.length-1
-      if genre_count
+      if genre_count.key?(@@genres[i])
+        
   end
   
 end
