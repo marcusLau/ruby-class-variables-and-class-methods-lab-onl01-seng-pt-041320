@@ -1,8 +1,8 @@
 class Song
   
   @@count=0
-  @@genres = []
-  @@artists = []
+  @@genres = [] # this contains duplicates of song genres
+  @@artists = [] # contains dups of artists 
   
   attr_accessor :name, :artist, :genre
   
